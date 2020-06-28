@@ -3,52 +3,52 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dashboard</title>
-		<link rel="stylesheet" href="/assets/css/style.css" />
+		<title>dimski framework</title>
+		<link rel="stylesheet" href="/assets/css/init.css" />
+		<link rel="stylesheet" href="/assets/css/index.css" />
 	</head>
-
 	<body>
 		<div class="wrapper">
-			<%- include('components/header', {title: 'Register'}); %>
-			<%-	include('components/nav-user'); %>
-			<section>
-				<form action="/user/register" method="POST">
-					<p>
-						<input
-							type="text"
-							name="username"
-							placeholder="username"
-						/>
-					</p>
-					<p>
-						<input
-							type="email"
-							name="email"
-							placeholder="email"
-						/>
-					</p>
-					<p>
-						<input
-							type="password"
-							name="password"
-							placeholder="password"
-						/>
-					</p>
-					<p>
-						<input
-							type="password"
-							name="password2"
-							placeholder="re enter the password"
-						/>
-					</p>
-					<input type="submit" value="register" />
-				</form>
-			</section>
-			<% if (error) { %> <% for (err of error) { %>
-			<div class="err">
-				<%= err.msg %>
+			<%- include("./components/menu-bar"); %> 
+			<div class="landing-page">
+				<h1>Register Page</h1>
+				<div>dari Dimas, oleh Dimas, untuk Dimas</div>
 			</div>
-			<% }; %> <% }; %>
+			<div class="login-bar">
+				<h2>REGISTER</h2>
+				<form method="POST" action="/login">
+					<input
+						class="form-control"
+						type="text"
+						name="username"
+						placeholder="username"
+					/>
+					<input
+						class="form-control"
+						type="email"
+						name="email"
+						placeholder="email"
+					/>
+					<input
+						class="form-control"
+						type="password"
+						name="password"
+						placeholder="password"
+					/>
+
+					<input
+						class="form-control"
+						type="password"
+						name="password2"
+						placeholder="password confirmation"
+					/>
+					<input class="form-btn" type="submit" value="Register" />
+				</form>
+				<div class="err">Error 1</div>
+				<div class="err">Error 1</div>
+				<div class="err">Error 1</div>
+				<div class="err">Error 1</div>
+			</div>
 		</div>
 	</body>
 </html>

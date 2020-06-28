@@ -14,10 +14,10 @@ app.use(flash());
 
 app.use("/assets", express.static(`${__dirname}/public`));
 
-// const indexRouter = require("./routers/index");
-// app.use("/", indexRouter);
+const indexRouter = require("./routers/index");
+app.use("/", indexRouter);
 
-const userRouter = require("./routers/user");
-app.use("/user", userRouter);
+// const userRouter = require("./routers/user");
+// app.use("/user", userRouter);
 
 app.listen(8000, () => console.log("server is running at port 8000"));

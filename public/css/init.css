@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+	font-family: "HVT", Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+	font-family: "HVT";
+	src: url("/assets/fonts/font-regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "HVT";
+	src: url("/assets/fonts/font-bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	min-height: 100%;
+	background-color: rgb(165, 94, 234);
+	display: flex;
+	justify-content: center;
+}
