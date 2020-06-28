@@ -31,7 +31,8 @@
 	padding: 0.5rem;
 }
 
-.menu a:hover, .menu a.active {
+.menu a:hover,
+.menu a.active {
 	background-color: rgb(165, 94, 234);
 }
 
@@ -49,7 +50,7 @@
 	font-size: 3rem;
 }
 
-.login-bar {
+.control-bar {
 	width: 30%;
 	height: 100%;
 	background-color: rgb(136, 84, 208);
@@ -81,6 +82,13 @@ h2 {
 	width: 100%;
 }
 
+
+textarea.form-control {
+	min-height: 128px;
+	max-width: 100%;
+	min-width: 100%;
+}
+
 .err {
 	color: black;
 	width: 100%;
@@ -89,4 +97,53 @@ h2 {
 	margin: 0 0 0.5rem;
 	padding: 0.5rem;
 	overflow: hidden;
+}
+
+.profile-page {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	color: white;
+	background-color: rgb(136, 84, 208);
+}
+
+.profile-header {
+	background-color: rgb(165, 94, 234);
+	height: 128px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0.5rem;
+}
+
+.profile-picture {
+	width: 64px;
+	height: 64px;
+	background-color: rgb(136, 84, 208);
+	margin: 0 0.5rem;
+}
+
+.profile-tweet {
+	width: 100%;
+}
+
+.tweet {
+	background-color: rgb(209, 216, 224);
+	color: black;
+	width: 100%;
+	padding: 1rem;
+	margin: 1px 0;
+}
+
+.username {
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.userbio {
+	font-style: italic;
 }

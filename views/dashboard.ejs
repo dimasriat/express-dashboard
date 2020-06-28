@@ -10,26 +10,32 @@
 	<body>
 		<div class="wrapper">
 			<%- include("./components/menu-bar"); %>
-			<div class="landing-page">
-				<h1>Login Page</h1>
-				<div>dari Dimas, oleh Dimas, untuk Dimas</div>
+			<div class="profile-page">
+				<div class="profile-header">
+					<div class="profile-picture"></div>
+					<div class="profile-description">
+						<div class="username">dimasriat</div>
+						<div class="userbio">Hobi saya ngonding cari duit</div>
+					</div>
+				</div>
+				<div class="profile-tweet">
+					<div class="tweet">
+						<p>Haloooo</p>
+					</div>
+					<div class="tweet">
+						<p>Apa kabarr</p>
+					</div>
+				</div>
 			</div>
 			<div class="control-bar">
-				<h2>LOG IN</h2>
+				<h2>New Tweet</h2>
 				<form method="POST" action="/login">
-					<input
+					<textarea
 						class="form-control"
-						type="text"
-						name="username"
-						placeholder="username"
-					/>
-					<input
-						class="form-control"
-						type="password"
-						name="password"
-						placeholder="password"
-					/>
-					<input class="form-btn" type="submit" value="Log In" />
+						placeholder="tweet"
+						name="tweet"
+					></textarea>					
+					<input class="form-btn" type="submit" value="Tweet" />
 				</form>
 				<div class="err">Error 1</div>
 				<div class="err">Error 1</div>
